@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "685074317844",
+    "firebase_url": "https://cdacserveapp.firebaseio.com",
+    "project_id": "cdacserveapp",
+    "storage_bucket": "cdacserveapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685074317844:android:2ff5b66e191156eb",
+        "android_client_info": {
+          "package_name": "com.example.cdacserveapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685074317844-ga2fh4msfi8bsa7jjf3ccpjao90irnco.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cdacserveapp",
+            "certificate_hash": "2b0ce504bdda8974c1a8e682f1ea6988244d19d7"
+          }
+        },
+        {
+          "client_id": "685074317844-7geqrbvr5r4afd49pvj8346rht691phq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaxaPnUQ2ngiTEnA9ozJ4dXXaxvJYdFjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685074317844-7geqrbvr5r4afd49pvj8346rht691phq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

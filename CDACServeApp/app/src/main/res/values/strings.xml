@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Survey</string>
+    <string name="title">Take Survey</string>
+    <string name="save">submit</string>
+    <string name="rating">Rating</string>
+    <string name="description">Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="username">Your Name</string>
+</resources>

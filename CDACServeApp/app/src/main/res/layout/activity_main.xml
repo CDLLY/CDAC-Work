@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/relativeLayoutServey">
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutRating"
+        android:layout_below="@id/textview_title"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <RatingBar
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/ratingBar"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/ratingBarTextview"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Title"/>
+
+    </LinearLayout>
+
+
+    <EditText
+
+        style="@style/Widget.AppCompat.EditText"
+        android:id="@+id/edittextDescription"
+        android:layout_width="match_parent"
+        android:gravity="start"
+        android:layout_height="250dp"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/linearlayoutRating"
+        android:padding="15dp"/>
+
+    <EditText
+        style="@style/Widget.AppCompat.EditText"
+        android:id="@+id/edittextUsername"
+        android:hint="@string/username"
+        android:padding="15dp"
+        android:layout_below="@id/edittextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linerLayoutButton"
+        android:layout_below="@id/edittextUsername"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="1"
+        android:layout_margin="10dp">
+
+        <Button
+            style="?attr/buttonBarStyle"
+            android:layout_weight="0.5"
+            android:id="@+id/cancelBtn"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:text="@string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="?attr/buttonBarStyle"
+            android:layout_weight="0.5"
+            android:id="@+id/saveDataBtn"
+            android:text="@string/save"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
